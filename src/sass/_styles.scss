@@ -16,7 +16,13 @@ body {
 
 h1 {
   font-size: 32px;
-  color:rgba(10, 10, 10, 0.2);
+  color:rgb(10, 10, 10);
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .countryNameInput {
@@ -36,7 +42,3 @@ h1 {
 .countryNameInput:active {
   outline-color: #2f4f4f;
 }
-
-// .img_flag {
-// margin: 20px 0 0 40px;
-// }
