@@ -1,4 +1,6 @@
 body {
+  width: 100%;
+  
   font-family: Arial, Helvetica, sans-serif;
   height: 240px;
   background-image: url(../images/Earth.jpg) ;
@@ -41,4 +43,8 @@ h1 {
 .countryNameInput:focus,
 .countryNameInput:active {
   outline-color: #2f4f4f;
+}
+
+.img_flag {
+  margin: 20px 0 0 40px;
 }
