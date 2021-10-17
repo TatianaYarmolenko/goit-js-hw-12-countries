@@ -24,14 +24,14 @@ function renderCountryCard(data) {
     card.insertAdjacentHTML('beforeend', markup);
 }
 
-function checkContries(data) {
+function checkCountries(data) {
             if (data.length === 1) {
                 renderCountryCard(data)
             }
-            if (data.length > 10) {
+            else if (data.length > 10) {
                 return alert({ text: 'Too many matches found. Please enter a more specific query!' })
             }
-            if (data.length >=2 && data.length < 10 ) {
+            else if (data.length >=2 && data.length < 10 ) {
                 card.innerHTML = countryList(data)
             }
 }
@@ -39,7 +39,7 @@ function onSearch(e) {
     clearContainer();
     const searchQuery = e.target.value;
     e.preventDefault();
-    API.fetchCountries(searchQuery).then(checkContries);
+    API.fetchCountries(searchQuery).then(checkCountries);
    }
 
 inputCountry.addEventListener('input', debounce(onSearch, 500));
